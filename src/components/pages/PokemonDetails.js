@@ -1,10 +1,11 @@
 import React from 'react';
+import { PageContainer } from '../sharedSnippets/Containers';
 
 const PokemonDetails = () => {
     return (
-        <div>
+        <PageContainer backgroundColor="blue">
             
-        </div>
+        </PageContainer>
     );
 };
 

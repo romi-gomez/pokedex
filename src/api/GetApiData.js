@@ -20,7 +20,7 @@ function GetApiData(searchParams, limit) {
         fetchData();
     }, []);
 
-    return GetApiData;
+    return searchedData;
 }
 
-export default ApiData;
+export default GetApiData;

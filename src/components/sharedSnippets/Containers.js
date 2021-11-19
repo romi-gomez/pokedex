@@ -1,11 +1,8 @@
-import React from 'react';
+import styled from 'styled-components'
 
-const Containers = () => {
-    return (
-        <div>
-            
-        </div>
-    );
-};
+export const PageContainer = styled.div`
+    width:100%;
+    height: 100%;
+    background: ${props => props.backgroundColor}
+`
 
-export default Containers;
