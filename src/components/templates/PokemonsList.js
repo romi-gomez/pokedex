@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styled, {withTheme} from 'styled-components'
+import styled from 'styled-components'
 import { GetPokemonsList } from '../../api/GetPokemonsList';
 import { ComponentContainer } from '../sharedSnippets/Containers';
 import PokemonPresentationCard from './PokemonPresentationCard';
@@ -42,4 +42,4 @@ const PokemonsList = () => {
     );
 };
 
-export default withTheme(PokemonsList);
+export default PokemonsList;
