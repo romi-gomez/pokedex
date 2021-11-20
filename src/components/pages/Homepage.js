@@ -1,18 +1,13 @@
 import React, {useState, useEffect}  from 'react';
-import { PageContainer } from '../sharedSnippets/Containers';
+import { ComponentContainer } from '../sharedSnippets/Containers';
+import PokemonsList from '../templates/PokemonsList';
 import styled from 'styled-components'
 
-const Button = styled.button`
-    width:600px;
-    height: 600px;
-`
-
 const Homepage = () => {
-
     return (
-        <PageContainer backgroundColor="pink">
-            <Button></Button>
-        </PageContainer>
+        <ComponentContainer>
+           <PokemonsList></PokemonsList>
+        </ComponentContainer>
     );
 }
 

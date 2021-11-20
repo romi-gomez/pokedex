@@ -1,10 +1,19 @@
 import React from 'react';
+import styled from 'styled-components'
 
-const Card = () => {
+const CardContainer = styled.div`
+    display: grid;
+    grid-template-columns:${props => props.layout === "horizontal" ? "1fr 1fr" : ""};
+    grid-template-rows:${props => props.layout === "vertical" ? "1fr 1fr" : ""};
+`
+
+
+
+const Card = (props) => {
     return (
-        <div>
-            
-        </div>
+        <CardContainer cardLayout={props.layout}>
+
+        </CardContainer>
     );
 };
 

@@ -17,8 +17,6 @@ export const GetApiData = (searchParams, limit)=> {
     const searchLimit = limit ? `?limit=${limit}` : "" 
     const url = `${process.env.REACT_APP_API}/${searchParams}${searchLimit}`
 
-
-
     useEffect(() => {
         setPartData({
             state: apiStates.LOADING,
