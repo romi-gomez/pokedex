@@ -1,26 +1,61 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
+import { ThemeProvider } from 'styled-components'
 import Homepage from './components/pages/Homepage'
-import PokemonsList from './components/pages/PokemonsListPage'
 import PokemonDetails from './components/pages/PokemonDetailsPage'
 import styled from 'styled-components'
+
+const theme = {
+  color:{
+    principal:"#E94934",
+    principalLight:"#FBDAD0", 
+    principalLighter:"#FEF8F8",
+    highlight:"",
+    grey:"#424242", 
+    greyLight:"#828282",
+    greyLighter:"#F4F4F4",
+  }, 
+  fontSize:{
+    xs:".5em", 
+    s:"1em", 
+    m:"1.5em",
+    l:"2em", 
+    xl:"4em"
+  },
+  margin:{
+    xs:".5em", 
+    s:"1em", 
+    m:"1.5em",
+    l:"2em", 
+    xl:"4em"
+  },
+  breakpoint:{  
+      xl:"1280px",
+      l:"1080px",
+      m:"767px",
+      s:"465px",
+      xs:"320px"
+  }
+}
 
 const Wrapper = styled.div`
   width: 100%;
   height:100%;
-  background-color: black;
 `
+
+
 
 const App = () => {
 
   return (
-    <Wrapper className="App">
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/list" element={<PokemonsList />} />
-        <Route path="/details" element={<PokemonDetails />} />
-      </Routes>
-    </Wrapper>
+    <ThemeProvider theme={theme}>
+      <Wrapper className="App">
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/details" element={<PokemonDetails />} />
+        </Routes>
+      </Wrapper>
+    </ThemeProvider>
   );
 }
 
