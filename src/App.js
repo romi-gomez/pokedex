@@ -1,8 +1,8 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Homepage from './components/pages/Homepage'
-import PokemonsList from './components/pages/PokemonsList'
-import PokemonDetails from './components/pages/PokemonDetails'
+import PokemonsList from './components/pages/PokemonsListPage'
+import PokemonDetails from './components/pages/PokemonDetailsPage'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
