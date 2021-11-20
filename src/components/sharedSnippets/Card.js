@@ -1,20 +1,18 @@
-import React from 'react';
-import styled from 'styled-components'
+import styled, { withTheme } from 'styled-components'
 
-const CardContainer = styled.div`
+export const Card = withTheme( styled.article`
     display: grid;
-    grid-template-columns:${props => props.layout === "horizontal" ? "1fr 1fr" : ""};
-    grid-template-rows:${props => props.layout === "vertical" ? "1fr 1fr" : ""};
+    grid-template-columns:${props => props.layout === "horizontal" ? "1fr 3fr" : ""};
+    grid-template-rows:${props => props.layout === "vertical" ? "1fr 3fr" : ""};
+    width:100%;
+    min-height:200px;
+    border-radius:${props => props.theme.margin.s};
+    background-color:${props => props.theme.color.white};
+    box-shadow: 0px 0px 2px ${props => props.theme.color.greyLight};
+
+    &:hover{
+        background-color:${props => props.theme.color.principalLighter};
+        box-shadow: 0px 0px 2px ${props => props.theme.color.principal};
+    }
 `
-
-
-
-const Card = (props) => {
-    return (
-        <CardContainer cardLayout={props.layout}>
-
-        </CardContainer>
-    );
-};
-
-export default Card;
+)

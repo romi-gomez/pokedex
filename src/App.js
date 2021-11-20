@@ -14,6 +14,7 @@ const theme = {
     grey:"#424242", 
     greyLight:"#828282",
     greyLighter:"#F4F4F4",
+    white:"#F9f9f9"
   }, 
   fontSize:{
     xs:".5em", 
@@ -40,10 +41,13 @@ const theme = {
 
 const Wrapper = styled.div`
   width: 100%;
-  height:100%;
+  margin: 0 auto;
+
+  @media(min-width: ${props => props.theme.breakpoint.xl}){
+    max-width: ${props => props.theme.breakpoint.xl};
+  }
+
 `
-
-
 
 const App = () => {
 
