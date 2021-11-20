@@ -1,26 +1,43 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-function GetApiData(searchParams, limit) {
-    const [searchedData, setSearchedData] = useState([]);
+export const apiStates = {
+    LOADING: 'LOADING',
+    SUCCESS: 'SUCCESS',
+    ERROR: 'ERROR',
+};
+
+export const GetApiData = (searchParams, limit)=> {
+    const [data, setData] = useState({
+        state: apiStates.LOADING,
+        error: '',
+        data: [],
+    });
+
+    const setPartData = (partialData) => setData({ ...data, ...partialData });
+    const searchLimit = limit ? `?limit=${limit}` : "" 
+    const url = `${process.env.REACT_APP_API}/${searchParams}${searchLimit}`
+
+
 
     useEffect(() => {
-        const url = `${process.env.REACT_APP_API}/${searchParams}/&limit=${limit}`;
-
-        async function fetchData() {
-            try {
-                await fetch(url)
-                    .then(response => response.json())
-                    .then(data => setSearchedData(data));
-            } catch (err) {
-                console.log("Hubo un error al buscar")
-                console.log(err)
-            }
-        }
-
-        fetchData();
+        setPartData({
+            state: apiStates.LOADING,
+        });
+        fetch(url)
+            .then((response) => response.json())
+            .then((data) => {
+                setPartData({
+                    state: apiStates.SUCCESS,
+                    data
+                });
+            })
+            .catch(() => {
+                setPartData({
+                    state: apiStates.ERROR,
+                    error: 'fetch failed'
+                });
+            });
     }, []);
 
-    return searchedData;
-}
-
-export default GetApiData;
+    return data;
+};

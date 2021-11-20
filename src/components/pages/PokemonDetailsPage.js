@@ -1,15 +1,15 @@
-import {useState, useEffect} from 'react'
-import React from 'react';
-import {GetPokemonByName} from '../../api/GetPokemonByName';
+import React, {useState, useEffect} from 'react'
+import { GetPokemonByName } from '../../api/GetPokemonByName';
 import { PageContainer } from '../sharedSnippets/Containers';
 import styled from 'styled-components'
 
 
-function PokemonDetailsPage() {
+const PokemonDetailsPage = () => {
+    const pokemon = GetPokemonByName("charmander")
+    console.log(pokemon)
 
     return (
         <PageContainer backgroundColor="blue">
-
         </PageContainer>
     );
 };
