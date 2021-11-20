@@ -19,7 +19,6 @@ const ListContainer = styled(ComponentContainer)`
     @media(min-width: ${props => props.theme.breakpoint.l}){
         grid-template-columns:1fr 1fr 1fr 1fr;
     }
-
 `
 
 const PokemonsList = () => {
