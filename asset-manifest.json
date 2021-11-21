@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/houm-fe-challenge/static/css/main.604b603d.chunk.css",
-    "main.js": "/houm-fe-challenge/static/js/main.42ac8270.chunk.js",
-    "main.js.map": "/houm-fe-challenge/static/js/main.42ac8270.chunk.js.map",
-    "runtime-main.js": "/houm-fe-challenge/static/js/runtime-main.b6ca3fc1.js",
-    "runtime-main.js.map": "/houm-fe-challenge/static/js/runtime-main.b6ca3fc1.js.map",
-    "static/js/2.350eca19.chunk.js": "/houm-fe-challenge/static/js/2.350eca19.chunk.js",
-    "static/js/2.350eca19.chunk.js.map": "/houm-fe-challenge/static/js/2.350eca19.chunk.js.map",
-    "static/js/3.927cd2e1.chunk.js": "/houm-fe-challenge/static/js/3.927cd2e1.chunk.js",
-    "static/js/3.927cd2e1.chunk.js.map": "/houm-fe-challenge/static/js/3.927cd2e1.chunk.js.map",
-    "index.html": "/houm-fe-challenge/index.html",
-    "static/css/main.604b603d.chunk.css.map": "/houm-fe-challenge/static/css/main.604b603d.chunk.css.map",
-    "static/js/2.350eca19.chunk.js.LICENSE.txt": "/houm-fe-challenge/static/js/2.350eca19.chunk.js.LICENSE.txt",
-    "static/media/houmLogo.svg": "/houm-fe-challenge/static/media/houmLogo.bcc82a4c.svg"
+    "main.css": "/test/houm-fe-challenge/static/css/main.604b603d.chunk.css",
+    "main.js": "/test/houm-fe-challenge/static/js/main.80718bd8.chunk.js",
+    "main.js.map": "/test/houm-fe-challenge/static/js/main.80718bd8.chunk.js.map",
+    "runtime-main.js": "/test/houm-fe-challenge/static/js/runtime-main.1bd3ccec.js",
+    "runtime-main.js.map": "/test/houm-fe-challenge/static/js/runtime-main.1bd3ccec.js.map",
+    "static/js/2.882ceb2a.chunk.js": "/test/houm-fe-challenge/static/js/2.882ceb2a.chunk.js",
+    "static/js/2.882ceb2a.chunk.js.map": "/test/houm-fe-challenge/static/js/2.882ceb2a.chunk.js.map",
+    "static/js/3.2acb73b2.chunk.js": "/test/houm-fe-challenge/static/js/3.2acb73b2.chunk.js",
+    "static/js/3.2acb73b2.chunk.js.map": "/test/houm-fe-challenge/static/js/3.2acb73b2.chunk.js.map",
+    "index.html": "/test/houm-fe-challenge/index.html",
+    "static/css/main.604b603d.chunk.css.map": "/test/houm-fe-challenge/static/css/main.604b603d.chunk.css.map",
+    "static/js/2.882ceb2a.chunk.js.LICENSE.txt": "/test/houm-fe-challenge/static/js/2.882ceb2a.chunk.js.LICENSE.txt",
+    "static/media/houmLogo.svg": "/test/houm-fe-challenge/static/media/houmLogo.bcc82a4c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b6ca3fc1.js",
-    "static/js/2.350eca19.chunk.js",
+    "static/js/runtime-main.1bd3ccec.js",
+    "static/js/2.882ceb2a.chunk.js",
     "static/css/main.604b603d.chunk.css",
-    "static/js/main.42ac8270.chunk.js"
+    "static/js/main.80718bd8.chunk.js"
   ]
 }
