@@ -15,7 +15,7 @@ export const GetApiData = (searchParams, limit)=> {
 
     const setPartData = (partialData) => setData({ ...data, ...partialData });
     const searchLimit = limit ? `?limit=${limit}` : "" 
-    const url = `${process.env.REACT_APP_API}/${searchParams}${searchLimit}`
+    const url = `https://pokeapi.co/api/v2/${searchParams}${searchLimit}`
 
     useEffect(() => {
         setPartData({

@@ -56,13 +56,10 @@ const Wrapper = styled.div`
 const App = () => {
 
   return (
-    <ThemeProvider className="App" theme={theme}>
-      <Header></Header>
-      <Wrapper>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/details" element={<PokemonDetails />} />
-        </Routes>
+    <ThemeProvider  theme={theme}>
+      <Wrapper className="App">
+        <Header></Header>
+        <Homepage></Homepage>
       </Wrapper>
     </ThemeProvider>
   );

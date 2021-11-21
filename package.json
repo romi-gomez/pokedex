@@ -2,7 +2,7 @@
   "name": "houm-fe-challenge",
   "version": "0.1.0",
   "private": false,
-  "homepage": "http://romi-gomez.github.io/houm-fe-challenge",
+  "homepage": "http://romigomez.com.ar/test/houm-fe-challenge",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
