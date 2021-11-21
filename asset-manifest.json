@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/houm-fe-challenge/static/css/main.604b603d.chunk.css",
-    "main.js": "/houm-fe-challenge/static/js/main.949e3065.chunk.js",
-    "main.js.map": "/houm-fe-challenge/static/js/main.949e3065.chunk.js.map",
+    "main.js": "/houm-fe-challenge/static/js/main.cd109522.chunk.js",
+    "main.js.map": "/houm-fe-challenge/static/js/main.cd109522.chunk.js.map",
     "runtime-main.js": "/houm-fe-challenge/static/js/runtime-main.8f7b4074.js",
     "runtime-main.js.map": "/houm-fe-challenge/static/js/runtime-main.8f7b4074.js.map",
     "static/js/2.8488c69e.chunk.js": "/houm-fe-challenge/static/js/2.8488c69e.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.8f7b4074.js",
     "static/js/2.8488c69e.chunk.js",
     "static/css/main.604b603d.chunk.css",
-    "static/js/main.949e3065.chunk.js"
+    "static/js/main.cd109522.chunk.js"
   ]
 }
