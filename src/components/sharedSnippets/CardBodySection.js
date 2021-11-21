@@ -44,7 +44,7 @@ const CardBodySection = (props) => {
                     <h3>{props.sectionTitle}</h3>
                 </CardBodySectionHeader>
                 <CardBodySectionContent>
-                    {props.sectionData.map(data => {
+                    {props.sectionData.slice(0,7).map(data => {
                         return <Tag key={data} tagContent={data} />
                     })}
                 </CardBodySectionContent>

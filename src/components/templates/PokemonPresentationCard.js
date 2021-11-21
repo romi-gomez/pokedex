@@ -7,21 +7,25 @@ import CardBody from '../sharedSnippets/CardBody';
 import { Card } from '../sharedSnippets/Card'
 
 const CardWrapper = styled.div`
+    display:flex;
     padding : ${props => props.theme.margin.s};
-    transition: padding ease-in-out .2s;
+    transition: margin-top ease-in-out .2s;
+    opacity:.7;
 
      &:hover {
-        padding : ${props => props.theme.margin.xs};
+        margin-top : -10px ;
+        opacity:1;
         cursor:pointer;
      }
 
      &:active{
-        padding : ${props => props.theme.margin.s};
+        margin-top : 0 ;
      }
 `
 
 const PokemonPresentationCard = (props) => {
     const pokemon = GetPokemonByName(props.pokemon.name)
+    console.log(pokemon)
 
     return (
         <CardWrapper>

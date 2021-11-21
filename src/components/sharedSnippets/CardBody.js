@@ -37,17 +37,28 @@ const Span = styled.span`
 
 const CardBody = (props) => {
     const [pokemonAbilities, setPokemonAbilities] = useState([])
+    const [pokemonMoves, setPokemonMoves] = useState([])
 
     useEffect(()=>{
         if (props.pokemon !== "loading" ) {
             let tempPokemonAbilities = props.pokemon.abilities
             let pokemonAbilitiesTempArray = []
 
+            let tempPokemonMoves = props.pokemon.moves
+            let pokemonMovesTempArray = []
+
             if(tempPokemonAbilities !== undefined ){
                 tempPokemonAbilities.map(ability => {
                     pokemonAbilitiesTempArray.push(ability.ability.name)
                 })
                 setPokemonAbilities(pokemonAbilitiesTempArray)
+            }
+
+            if(tempPokemonMoves !== undefined ){
+                tempPokemonMoves.map(move => {
+                    pokemonMovesTempArray.push(move.move.name)
+                })
+                setPokemonMoves(pokemonMovesTempArray)
             }
         }
     }, [props.pokemon])
@@ -60,6 +71,7 @@ const CardBody = (props) => {
                 <Highlight><Icon><GiWeight/> </Icon>{props.pokemon.weight} </Highlight>
             </HighlightsContainer>
             <CardBodySection sectionTitle={"Abilities"} sectionData={pokemonAbilities} />
+            <CardBodySection sectionTitle={"Moves"} sectionData={pokemonMoves} />
         </CardBodyContainer>
     );
 };

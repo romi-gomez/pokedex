@@ -6,6 +6,7 @@ import Tag from './Tag'
 const CardHeaderContainer = styled.header`
     width:100%;
     height:100%;
+    max-height:180px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     background: #FFFFFF;
