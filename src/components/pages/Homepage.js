@@ -1,12 +1,22 @@
 import React, {useState, useEffect}  from 'react';
 import { ComponentContainer } from '../sharedSnippets/Containers';
+import { GetPokemonsList } from '../../api/GetPokemonsList'
 import PokemonsList from '../templates/PokemonsList';
-import styled from 'styled-components'
 
-const Homepage = () => {
+const Homepage = (props) => {
+    
+const pokemonsListData = GetPokemonsList(600)
+const [pokemonsToShow, setPokemonsToShow] = useState([])
+
+useEffect(()=>{
+    if (pokemonsListData !== "loading") {
+        setPokemonsToShow(pokemonsListData.results)
+    }
+}, [pokemonsListData])
+
     return (
         <ComponentContainer>
-           <PokemonsList></PokemonsList>
+           <PokemonsList pokemonsToShow={pokemonsToShow}></PokemonsList>
         </ComponentContainer>
     );
 }

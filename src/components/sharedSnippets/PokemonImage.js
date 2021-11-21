@@ -4,14 +4,15 @@ import React from 'react';
 const ImageContainer = styled.div`
     max-width:120px;
     height:100px;
-    text-align:center;
-    align-self:flex-start;
+    margin-left:${props => props.theme.margin.m};
+    justify-self:start;
+    align-self:center;
 `
 
 const ImageSource = styled.img`
-    height:90%;
-    width:70%;
-    position: relative;
+    height:100%;
+    width:100%;
+    
 `
 
 const PokemonImage = (props) => {

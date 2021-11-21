@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react';
 import styled from 'styled-components'
-import { GetPokemonsList } from '../../api/GetPokemonsList';
 import { ComponentContainer } from '../sharedSnippets/Containers';
 import PokemonPresentationCard from './PokemonPresentationCard';
 
@@ -21,20 +19,11 @@ const ListContainer = styled(ComponentContainer)`
     }
 `
 
-const PokemonsList = () => {
-    const pokemonsList = GetPokemonsList(20)
-    const [pokemonsToShow, setPokemonsToShow] = useState([])
-
-    useEffect(()=>{
-        if (pokemonsList !== "loading") {
-            setPokemonsToShow(pokemonsList.results)
-        }
-    }, [pokemonsList])
-
+const PokemonsList = (props) => {
 
     return (
         <ListContainer>
-            { pokemonsToShow.map( pokemon =>{
+            { props.pokemonsToShow.map( pokemon =>{
                 return <PokemonPresentationCard key={pokemon.name}  pokemon={pokemon}/>
             })}
         </ListContainer>

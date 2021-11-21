@@ -35,7 +35,7 @@ export const GetApiData = (searchParams, limit)=> {
                     error: 'fetch failed'
                 });
             });
-    }, []);
+    },[]);
 
     return data;
 };
