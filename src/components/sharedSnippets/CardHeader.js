@@ -4,6 +4,8 @@ import PokemonImage from './PokemonImage'
 import Tag from './Tag'
 
 const CardHeaderContainer = styled.header`
+    width:100%;
+    height:100%;
     display: grid;
     grid-template-columns: 1fr 2fr;
     background: #FFFFFF;
