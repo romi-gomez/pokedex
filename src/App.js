@@ -1,6 +1,8 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
+
+import Header from './components/sharedSnippets/Header'
 import Homepage from './components/pages/Homepage'
 import PokemonDetails from './components/pages/PokemonDetailsPage'
 import styled from 'styled-components'
@@ -54,8 +56,9 @@ const Wrapper = styled.div`
 const App = () => {
 
   return (
-    <ThemeProvider theme={theme}>
-      <Wrapper className="App">
+    <ThemeProvider className="App" theme={theme}>
+      <Header></Header>
+      <Wrapper>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/details" element={<PokemonDetails />} />
