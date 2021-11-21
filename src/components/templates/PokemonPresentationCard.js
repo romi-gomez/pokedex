@@ -10,7 +10,7 @@ const CardWrapper = styled.div`
     display:flex;
     padding : ${props => props.theme.margin.s};
     transition: margin-top ease-in-out .2s;
-    opacity:.7;
+    opacity:.85;
 
      &:hover {
         margin-top : -10px ;
