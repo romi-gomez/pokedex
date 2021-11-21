@@ -46,7 +46,7 @@ const CardHeader = (props) => {
             <HeaderInfo>
                 <TagsContainer>
                 {typesNamesArray.map(type =>{
-                    return <Tag tagStyle="principal" tagContent={type} />
+                    return <Tag key={type} tagStyle="principal" tagContent={type} />
                 })}
                 </TagsContainer>
                 <PokemonName>{props.pokemon.name}</PokemonName>
