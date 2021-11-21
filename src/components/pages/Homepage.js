@@ -1,5 +1,5 @@
 import React, {useState, useEffect}  from 'react';
-import { ComponentContainer } from '../sharedSnippets/Containers';
+import { PageContainer } from '../sharedSnippets/Containers';
 import { GetPokemonsList } from '../../api/GetPokemonsList'
 import PokemonsList from '../templates/PokemonsList';
 
@@ -15,9 +15,9 @@ useEffect(()=>{
 }, [pokemonsListData])
 
     return (
-        <ComponentContainer>
+        <PageContainer>
            <PokemonsList pokemonsToShow={pokemonsToShow}></PokemonsList>
-        </ComponentContainer>
+        </PageContainer>
     );
 }
 

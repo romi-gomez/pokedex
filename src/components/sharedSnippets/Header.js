@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components'
 
 const HeaderContainer = styled.header`
+    position: fixed;
+    z-index: 10;
+    background-color:#FFFFFF;
     width:100%;
     box-shadow: 0px 1px 7px ${props => props.theme.color.greyLight};
 ` 
