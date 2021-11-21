@@ -10,8 +10,7 @@ const CardBodyContainer = styled.div`
 
 const CardBody = (props) => {
     const [pokemonAbilities, setPokemonAbilities] = useState([])
-    console.log(props.pokemon)
-
+    
     useEffect(()=>{
         if (props.pokemon !== "loading" ) {
             let tempPokemonAbilities = props.pokemon.abilities

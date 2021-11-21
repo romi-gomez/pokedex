@@ -20,6 +20,7 @@ const CardBodySectionHeader = styled.div`
 ` 
 const CardBodySectionContent = styled.div`
     display: flex;
+    flex-wrap:wrap;
 `
 
 

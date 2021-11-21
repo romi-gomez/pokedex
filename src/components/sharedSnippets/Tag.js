@@ -23,9 +23,9 @@ const Tag = (props) => {
 
     const getTagStyles = (tagColor) => {
         switch (tagColor) {
-            case "primary":
+            case "principal":
                 return {
-                    backgroundColor: props.theme.color.principalLight,
+                    backgroundColor: props.theme.color.principalLighter,
                     color: props.theme.color.principal
                 }
             default: return {
