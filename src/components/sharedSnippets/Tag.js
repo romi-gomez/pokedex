@@ -4,6 +4,7 @@ import styled, {withTheme} from 'styled-components';
 const TagContainer = styled.div`
     align-self:center;
     justify-self: end;
+    margin-left:${props => props.theme.margin.xs};
     padding: ${props => props.theme.margin.xs} ${props => props.theme.margin.s};
     margin-bottom:${props => props.theme.margin.xs};
     border-radius:${props => props.theme.margin.s};

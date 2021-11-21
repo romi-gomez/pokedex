@@ -5,7 +5,7 @@ import PokemonsList from '../templates/PokemonsList';
 
 const Homepage = (props) => {
     
-const pokemonsListData = GetPokemonsList(600)
+const pokemonsListData = GetPokemonsList(20)
 const [pokemonsToShow, setPokemonsToShow] = useState([])
 
 useEffect(()=>{
